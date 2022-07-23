@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!--CSS StyleSheet  -->
+    <link rel="stylesheet" href="index.css">
+    <title>HOME</title>
+</head>
+<body class="home">
+    <a href="#main" class="skip-to-main-content">Skip to Main content</a>
+    <!-- We can have multiple header in a page as well (though not necessary here) -->
+    <header class="primary-header flex">
+        <!-- always use a div to contain an image when using flexbox because an image directly as a flexbox element causes bugs -->
+        <div>
+            <img src="assets/shared/logo.svg" alt="space tourism logo" class="logo">
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="flex primary-navigation underline-indicator">
+                <li class="active"><a class="ff-sans-cond fs-300 uppercase letter-spacing-2 text-white" href="#"><span aria-hidden="true">00</span> home</a></li>
+                <li><a class="ff-sans-cond fs-300 uppercase letter-spacing-2 text-white" href="destination.html"><span aria-hidden="true">01</span> destination</a></li>
+                <li><a class="ff-sans-cond fs-300 uppercase letter-spacing-2 text-white" href="crew.html"><span aria-hidden="true">02</span> crew</a></li>
+                <li><a class="ff-sans-cond fs-300 uppercase letter-spacing-2 text-white" href="technology.html"><span aria-hidden="true">03</span> technology</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main" class="grid-container grid-container--home">
+        <div>
+            <h1 class="ff-sans-cond fs-500 uppercase letter-spacing-1">So, you want to travel to
+            <span class="ff-serif fs-900 d-block">Space</span> </h1>
+            <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+            outer space and not hover kind of on the edge of it. Well sit back, and relax 
+            because we’ll give you a truly out of this world experience! </p>
+        </div>
+        <div>
+            <a href="destination.html" class=" large-button ff-serif uppercase bg-white text-dark">Explore</a>
+        </div>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
